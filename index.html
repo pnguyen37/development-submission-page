@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Development Submission Page</title>
+    <!-- import CSS styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div id="widthContainer">
+      <h1>Development</h1>
+      <h2>Overview</h2>
+      <p>
+        In this project, I conducted a competitive analysis between three different companies to analyze the design choices made by industry experts. I looked at features related to the filtering and sorting functionality of the page. I then implemented a page of my own based on the features that I thought worked well, specifically when used in combination with a favoriting function. 
+      </p>
+
+			<hr/>
+      <h2>Competitive Analysis</h2>
+			<h3 class="bold">Crunchyroll</h3>
+			<p>Below is the favoriting function of Crunchyroll, which allows users to save their favorite shows and movies to a watchlist (shown below). The user can filter for content based on language and media type, and sort based on name, date of release, add activity, and watch activity.</p>
+      <div class="imgContainer ">
+        <img class="screenshot" src="assets/crunchyroll.png" alt="Crunchyroll favoriting feature"></img>
+      </div>
+       <p>To visit Crunchyroll, click <a class="bold" href="https://www.crunchyroll.com/">
+          here
+        </a>
+      </p>
+      <hr class="spacing"/>
+
+			<h3 class="bold">Github</h3>
+			<p>Below is the favoriting function of Github, which allows users to save their favorite projects by starring it (shown below). The user can filter for projects based on the type and language of the program and category, and sort based on productivity and number of stars on the project.</p>
+      <div class="imgContainer ">
+        <img class="screenshot" src="assets/github.png" alt="Github favoriting feature"></img>
+      </div>
+      <p>To visit Github, click <a class="bold" href="https://github.com/">
+          here
+        </a>
+      </p>
+
+      <hr class="spacing"/>
+
+			<h3 class="bold">Yelp</h3>
+			<p>Below is the favoriting function of Yelp, which allows users to save their favorite restaurants by bookmarking to the bookmarks list (shown below). The user can filter for places based on location and category, and sort based on the date added to the list, name of the place, and distance.</p>
+      <div class="imgContainer ">
+        <img class="screenshot" src="assets/yelp.png" alt="Yelp favoriting feature"></img>
+      </div>
+      <p>To visit Yelp, click <a class="bold" href="https://www.yelp.com/">
+          here
+        </a>
+      </p>
+
+      <hr class="spacing"/>
+
+      <h3 class="bold">Competitive Comparison Chart</h3>
+      <table>
+        <colgroup>
+          <col>
+        </colgroup>
+        <tr>
+          <th></th>
+          <th>Crunchyroll</th>
+          <th>Github</th>
+          <th>Yelp</th>
+        </tr>
+         <tr>
+          <td>Includes a button that says “sort by” to indicate sorting functionality.</td>
+          <td><span class="bold">No</span> - Only includes an icon to indicate sorting.</td>
+          <td><span class="bold">Yes</span> - Sorting functionality says “sort by” followed by sortable categories. </td>
+          <td><span class="bold">Yes</span> - Sorting functionality says “sort by” followed by sortable categories. </td>
+        </tr>
+        <tr>
+          <td>Adding and removing an item to and from favorites is one step.</td>
+          <td><span class="bold">Yes</span> - Favorite shows are added and removed by selecting and deselecting heart button.</td>
+          <td><span class="bold">Yes</span> - Favorite repositories are added and removed by selecting and deselecting star button.</td>
+          <td><span class="bold">No</span> - User can favorite to specific list. To remove from list requires extra confirmation. </td>
+        </tr>
+        <tr>
+          <td>Filters displayed by category.</td>
+          <td><span class="bold">No</span> - All filter categories are displayed under one filter button. </td>
+          <td><span class="bold">Yes</span> - Has categories like language, type. </td>
+          <td><span class="bold">Yes</span> - Has categories like location and type of place (food vs drink). </td>
+        </tr>
+        <tr>
+          <td>Has option to reset filters.</td>
+          <td><span class="bold">Yes</span> - Has text that removes all filters when clicked. </td>
+          <td><span class="bold">Yes</span> - Has button that clears all filters when selected.</td>
+          <td><span class="bold">No</span> - Filters must be removed / deselected individually. </td>
+        </tr>
+        <tr>
+          <td>Favorite items displayed as list with most recent added on top.</td>
+          <td><span class="bold">No</span> - Favorite shows/movies are displayed as a grid with most recently added ones at the top left.  </td>
+          <td><span class="bold">Yes</span> - Most recently added repositories are displayed on top of list.</td>
+          <td><span class="bold">Yes</span> - Most recently added restaurant is displayed on top of list. </td>
+        </tr>
+        <tr>
+          <td>Text changes to indicate selected sort / filter. </td>
+          <td><span class="bold">Yes</span> - The header and subheader change to indicate selected sort and filters.</td>
+          <td><span class="bold">Yes</span> - Text indicates selected filters. </td>
+          <td><span class="bold">No</span> - Filters and sort are shown only in the buttons. </td>
+        </tr>
+        <tr>
+          <td>Favorited items have same layout as original list items. </td>
+          <td><span class="bold">Yes</span> - Same card layout. </td>
+          <td><span class="bold">Yes</span> - Same text-based layout. </td>
+          <td><span class="bold">No</span> - Favorited item is condensed into card, original item opens to its own page.</td>
+        </tr>
+      </table>
+
+      <hr class="spacing"/>
+			<h3 class="bold">Summary of Comparison</h3>
+			<ul>
+        <p class="bold">Crunchyroll:</p> 
+        <li>
+          <p>
+            One  design choice that worked well for Crunchyroll was the changing header to indicate which sort was selected. This was helpful in terms of visual hierarchy because the heading is large enough to ensure the user sees the sort change. Another factor that worked well was the grid display because the content was primarily-image based, so the grid allows the user to quickly scan  the image before the text, which was minimal anyways. 
+          </p>
+        </li>
+        <li>
+          <p> 
+            One feature that did not work as well was the sort button, because it doesn’t indicate it’s a sort button through text, and instead uses an icon and displays the automatic sort option as the text.  This was not as intuitive because it seems to have already selected a sort.  
+          </p>
+        </li>
+        <p class="bold">Github:</p> 
+        <li>
+          <p>
+           One design choice that worked well for Github was the indication of the selected filters. Although the selected filter is shown in the select button (similar to Yelp), there is also text indicating all the selected filters, which is helpful for clarity.  Another design choice that worked well was the button allowing users to clear filters, which is more convenient than manually deselecting filters. 
+          </p>
+        </li>
+        <li>
+          <p>
+            A design choice that did not work well was the deselect option, which doesn’t automatically remove the item from the favorites without refreshing or resorting first. 
+          </p>
+        </li>
+        <p class="bold">Yelp:</p>
+        <li>
+          <p>
+            One design choice that worked well for Yelp was the dropdown buttons used to indicate the filter and sort categories. It made it obvious to the user that there are multiple options to choose from based on category.  It also helped that the selected type remained in the select button, so the user knows the filter was applied. 
+          </p>
+        </li>
+        <li>
+          <p>
+            A feature that did not work as well was the remove feature, since there was a popup that asks the user to save the item to another collection. This wouldn’t match the mental model of deselecting with the intent to remove rather than to save to another collection.
+          </p>
+        </li>
+        <p class="bold">All Websites:</p> 
+         <li>
+          <p>
+            I found that all websites used icons to represent the favoriting function, which looked simple but still felt effective in signaling the favorites feature. This is most likely due to convention (since it is convention for hearts and stars to mean “liking” something).
+          </p>
+        </li>
+        <li>
+          <p>All the filtering and sorting functions were in one line and either left aligned or right aligned, which made it more efficient to use due to grouping. All websites used filter and sort in place, so the layout stayed the same as before, just with different ordering and items. </p>
+        </li>
+      </ul>
+
+      <h3 class="bold">Implementation Plan</h3>
+			<p>Considering the features that worked well for each website, I planned to include the following: </p>
+			<ul>
+        <li>
+          <p>
+            A dropdown sort button that is labeled “Sort By”
+          </p>
+        </li>
+        <li>
+          <p>
+            Dropdown filter buttons for each filter type (on the same line as the sort button)
+          </p>
+        </li>
+        <li>
+          <p>
+            A button to clear all filters at once
+          </p>
+        </li>
+        <li>
+          <p>
+            Icon to represent the favorite button, which can add and remove from the favorite list in one click
+          </p>
+        </li>
+        <li>
+          <p>
+            Grid layout to display all items, including the favorites
+          </p>
+        </li>
+        <li>
+          <p>
+            A header that changes according to the sort selected, and text indicating which filters are selected
+          </p>
+        </li>
+        <li>
+          <p>
+            Different layout between a favorited item and a list item
+          </p>
+        </li>
+      </ul>
+
+      <hr/>
+      <h2>Implementation</h2>
+      <h3 class="bold">My App</h3>
+      <p>
+        The intention of my app is a movie favoriting app that allows users to keep track of their favorite movies. The original list of movies is displayed as a grid of cards, with each movie card showing an image of the movie, as well as its title, date of release, rating, duration, and genre tags. The favorite list is in the top section, and is also displayed as a grid of cards, but the cards are smaller and do not show the genre tags. These are the three main functions of the page:
+      </p>
+
+      <ul>
+        <li>
+          <p>
+            The <span class="bold">filter</span> is based on the genre and rating of the movie, (which are more typical factors that users may use to determine whether or not to watch a movie). These can be selected by using the respective dropdown buttons, and removed by selecting the option "None."
+          </p>
+        </li>
+        <li>
+          <p>
+            The <span class="bold">sort</span> function sorts the movies alphabetically based on the title, or by the date of release from oldest to newest. The sort can be selected by using the "Sort by" dropdown button, and deselected by selecting the option "None."
+          </p>
+        </li>
+        <li>
+          <p>
+            The <span class="bold">aggregation</span> feature is a favoriting function that lists the favorited movies, the total number of favorites, and the total duration of all movies combined (which may be helpful for scheduling when / how long to watch). To favorite a movie, select the heart icon, and to remove a movie, deselect the heart icon (either from the movie card, or from the favorite card).
+          </p>
+        </li>
+      </ul>
+
+      <p>Using the features identified in the competitive analysis, I implemented the page (shown below).  </p>
+      <div class="imgContainer">
+        <img class="screenshot" src="assets/movie-tracker.png" alt="My movie tracker's favoriting feature"></img>
+      </div>
+      <p>To visit the page directly, click <a class="bold" href="https://development-indol-seven.vercel.app">
+          here!
+        </a>
+      </p>
+
+      <h3 class="bold">Additional Design Choices</h3>
+      <ul>
+        <li>
+            <p><span class="bold">Favorite List:</span> I chose to display the favorites on the top because as the user browses movies and scrolls down, they can use the scroll to top button to immediately get to the favorites.</p>
+        </li>
+        <li>
+            <p><span class="bold">Favorite Card:</span> I chose to display the favorite card differently from the movie card by using a horizontal layout, because I wanted a clear visual distinction between the two sections. Plus, the favorite card has less information to display. </p>
+        </li>
+        <li>
+          <p>
+            <span class="bold">Genre Tags:</span> On each movie card, the genre tag is clickable and will automatically filter for all movies of that genre. This is to help the user in filtering (especially if they don't want to scroll all the way up).
+          </p>
+        </li>
+      </ul>
+      <hr/>
+      <h2>Takeaways</h2>
+      <p>
+        After working on this project, I can see how important it is to do a copmarison between different websites. I found it helpful that I could take inspiration from other designs and reuse some feature ideas for my own page. As for the implementation process, I thought it was challenging because I struggled to keep components consistently updated according to the state (like the heart icon, for example). However, after working through those issues, I feel like a bit more comfortable using React and MaterialUI. If I were to build on this, I might add even more filtering functions, like a search by text feature. 
+      </p>
+    </div>
+  </body>
+</html>
