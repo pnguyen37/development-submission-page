@@ -29,7 +29,7 @@
       <hr class="spacing"/>
 
 			<h3 class="bold">Github</h3>
-			<p>Below is the favoriting function of Github, which allows users to save their favorite projects by starring it (shown below). The user can filter for projects based on the type and language of the program and category, and sort based on productivity and number of stars on the project.</p>
+			<p>Below is the favoriting function of Github, which allows users to save their favorite projects by starring it (shown below). The user can filter for projects based on the type and language of the program, and sort based on activity and number of stars on the project.</p>
       <div class="imgContainer ">
         <img class="screenshot" src="assets/github.png" alt="Github favoriting feature"></img>
       </div>
@@ -41,7 +41,7 @@
       <hr class="spacing"/>
 
 			<h3 class="bold">Yelp</h3>
-			<p>Below is the favoriting function of Yelp, which allows users to save their favorite restaurants by bookmarking to the bookmarks list (shown below). The user can filter for places based on location and category, and sort based on the date added to the list, name of the place, and distance.</p>
+			<p>Below is the favoriting function of Yelp, which allows users to save their favorite restaurants by bookmarking to a bookmark list (shown below). The user can filter for places based on location and category, and sort based on the date added to the list, name of the place, and distance.</p>
       <div class="imgContainer ">
         <img class="screenshot" src="assets/yelp.png" alt="Yelp favoriting feature"></img>
       </div>
@@ -73,13 +73,13 @@
           <td>Adding and removing an item to and from favorites is one step.</td>
           <td><span class="bold">Yes</span> - Favorite shows are added and removed by selecting and deselecting heart button.</td>
           <td><span class="bold">Yes</span> - Favorite repositories are added and removed by selecting and deselecting star button.</td>
-          <td><span class="bold">No</span> - User can favorite to specific list. To remove from list requires extra confirmation. </td>
+          <td><span class="bold">No</span> - User can favorite to specific list. Removing from favorites requires extra confirmation. </td>
         </tr>
         <tr>
           <td>Filters displayed by category.</td>
           <td><span class="bold">No</span> - All filter categories are displayed under one filter button. </td>
-          <td><span class="bold">Yes</span> - Has categories like language, type. </td>
-          <td><span class="bold">Yes</span> - Has categories like location and type of place (food vs drink). </td>
+          <td><span class="bold">Yes</span> - Has separate buttons for categories like language and type. </td>
+          <td><span class="bold">Yes</span> - Has separate buttons for categories like location and type of place (food vs drink, etc). </td>
         </tr>
         <tr>
           <td>Has option to reset filters.</td>
@@ -103,7 +103,7 @@
           <td>Favorited items have same layout as original list items. </td>
           <td><span class="bold">Yes</span> - Same card layout. </td>
           <td><span class="bold">Yes</span> - Same text-based layout. </td>
-          <td><span class="bold">No</span> - Favorited item is condensed into card, original item opens to its own page.</td>
+          <td><span class="bold">No</span> - Favorited item is condensed into card, while the original item opens to its own page.</td>
         </tr>
       </table>
 
@@ -118,7 +118,7 @@
         </li>
         <li>
           <p> 
-            One feature that did not work as well was the sort button, because it doesn’t indicate it’s a sort button through text, and instead uses an icon and displays the automatic sort option as the text.  This was not as intuitive because it seems to have already selected a sort.  
+            One feature that did not work as well was the sort button, because it doesn’t indicate it’s a sort button through text, and instead uses an icon and displays the automatic sort option as the text.  This was not very intuitive because it seems to have already selected a sort.  
           </p>
         </li>
         <p class="bold">Github:</p> 
@@ -135,7 +135,7 @@
         <p class="bold">Yelp:</p>
         <li>
           <p>
-            One design choice that worked well for Yelp was the dropdown buttons used to indicate the filter and sort categories. It made it obvious to the user that there are multiple options to choose from based on category.  It also helped that the selected type remained in the select button, so the user knows the filter was applied. 
+            One design choice that worked well for Yelp was the dropdown buttons used to indicate the filter and sort categories. It made it obvious to the user that there are multiple options to choose from based on category. It also helped that the selected type remained in the select button, so the user knows the filter was applied. I also liked that Yelp condensed the layout of the favorited items into cards that only show the most important features, because it makes the design more clean and not cluttered.
           </p>
         </li>
         <li>
@@ -150,12 +150,12 @@
           </p>
         </li>
         <li>
-          <p>All the filtering and sorting functions were in one line and either left aligned or right aligned, which made it more efficient to use due to grouping. All websites used filter and sort in place, so the layout stayed the same as before, just with different ordering and items. </p>
+          <p>All the filtering and sorting functions were in one line and either left aligned or right aligned, which made it more efficient to use due to grouping. All websites used filter and sort in place, so the layout stayed the same as before, just with different ordering and items. This was helpful for memorability purposes.</p>
         </li>
       </ul>
 
       <h3 class="bold">Implementation Plan</h3>
-			<p>Considering the features that worked well for each website, I planned to include the following: </p>
+			<p>Considering the features that worked well for each website, I chose to include the following: </p>
 			<ul>
         <li>
           <p>
@@ -189,7 +189,7 @@
         </li>
         <li>
           <p>
-            Different layout between a favorited item and a list item
+            Different layout between a favorited item and a list item. Less information in the favorited item.
           </p>
         </li>
       </ul>
@@ -198,18 +198,18 @@
       <h2>Implementation</h2>
       <h3 class="bold">My App</h3>
       <p>
-        The intention of my app is a movie favoriting app that allows users to keep track of their favorite movies. The original list of movies is displayed as a grid of cards, with each movie card showing an image of the movie, as well as its title, date of release, rating, duration, and genre tags. The favorite list is in the top section, and is also displayed as a grid of cards, but the cards are smaller and do not show the genre tags. These are the three main functions of the page:
+        The intention of my app is a movie favoriting app that allows users to keep track of their favorite movies. The original list of movies is displayed as a grid of cards, with each movie card showing an image related to the movie, as well as its title, date of release, rating, duration, and genre tags. The favorite list is in the top section, and is also displayed as a grid of cards, but the cards are smaller and do not show the genre tags. These are the three main functions of the page:
       </p>
 
       <ul>
         <li>
           <p>
-            The <span class="bold">filter</span> is based on the genre and rating of the movie, (which are more typical factors that users may use to determine whether or not to watch a movie). These can be selected by using the respective dropdown buttons, and removed by selecting the option "None."
+            The <span class="bold">filter</span> is based on the genre and rating of the movie, (which are more typical factors that users may use to determine whether or not to watch a movie). These can be selected by using the respective dropdown buttons, and removed by selecting the option "None." They can also be cleared at once by the reset button.
           </p>
         </li>
         <li>
           <p>
-            The <span class="bold">sort</span> function sorts the movies alphabetically based on the title, or by the date of release from oldest to newest. The sort can be selected by using the "Sort by" dropdown button, and deselected by selecting the option "None."
+            The <span class="bold">sort</span> function sorts the movies alphabetically based on the title, or by the date of release from oldest to newest. The sort can be selected by using the "Sort by" dropdown button, and deselected by selecting the option "None." The sort can also be cleared by the reset button.
           </p>
         </li>
         <li>
@@ -219,11 +219,11 @@
         </li>
       </ul>
 
-      <p>Using the features identified in the competitive analysis, I implemented the page (shown below).  </p>
+      <p>Using the features identified in the competitive analysis and the movie theme, I implemented my page (shown below).  </p>
       <div class="imgContainer">
         <img class="screenshot" src="assets/movie-tracker.png" alt="My movie tracker's favoriting feature"></img>
       </div>
-      <p>To visit the page directly, click <a class="bold" href="https://development-indol-seven.vercel.app">
+      <p>The image above shows some movies that have been favorited, as well as a display of cards that have been alphabetically-sorted and filtered for PG-13 and Comedy. To visit the page directly, click <a class="bold" href="https://development-indol-seven.vercel.app">
           here!
         </a>
       </p>
@@ -234,18 +234,18 @@
             <p><span class="bold">Favorite List:</span> I chose to display the favorites on the top because as the user browses movies and scrolls down, they can use the scroll to top button to immediately get to the favorites.</p>
         </li>
         <li>
-            <p><span class="bold">Favorite Card:</span> I chose to display the favorite card differently from the movie card by using a horizontal layout, because I wanted a clear visual distinction between the two sections. Plus, the favorite card has less information to display. </p>
+            <p><span class="bold">Favorite Card:</span> I chose to display the favorite card differently from the movie card by using a horizontal layout because I wanted a clear visual distinction between the two types. Plus, the favorite card has less information to display. </p>
         </li>
         <li>
           <p>
-            <span class="bold">Genre Tags:</span> On each movie card, the genre tag is clickable and will automatically filter for all movies of that genre. This is to help the user in filtering (especially if they don't want to scroll all the way up).
+            <span class="bold">Genre Tags:</span> On each movie card, the genre tag is clickable and will automatically filter for all movies that fall under that genre. This is to help the user in filtering (especially if they don't want to scroll all the way up).
           </p>
         </li>
       </ul>
       <hr/>
       <h2>Takeaways</h2>
       <p>
-        After working on this project, I can see how important it is to do a copmarison between different websites. I found it helpful that I could take inspiration from other designs and reuse some feature ideas for my own page. As for the implementation process, I thought it was challenging because I struggled to keep components consistently updated according to the state (like the heart icon, for example). However, after working through those issues, I feel like a bit more comfortable using React and MaterialUI. If I were to build on this, I might add even more filtering functions, like a search by text feature. 
+        After working on this project, I can see how important it is to do a copmarison between different websites. I found it helpful that I could take inspiration from other designs and reuse some feature ideas for my own page. As for the implementation process, I thought it was challenging because I struggled to keep components consistently updated according to the state (like the heart icon, for example). However, after working through those issues, I feel like a bit more comfortable using React and MaterialUI. If I were to build on this project, I might add even more filtering functions, like a search by text feature. 
       </p>
     </div>
   </body>
